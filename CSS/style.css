@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    width: 100%;
+    background: #ccc;
+    text-align: center;
+    height: 9vh;
+}
+
+header h1{
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+main{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+
+}
+
+main .content{
+    margin-top: 30px;
+    height: fit-content;
+    width: 600px;
+    /* border: 1px solid black; */
+}
+
+main .content .note{
+    text-align: center;
+    font-size: 18px;
+}
+
+main .content .word{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+main .content .form {
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+main .content .form span{
+    color: #ff4e4e;
+    padding: 5px;
+    font-size: 13px;
+    opacity: 0;
+}
+
+main .content .form span.active{
+    color: #ff4e4e;
+    padding: 5px;
+    font-size: 13px;
+    opacity: 1;
+}
+
+main .content .form input{
+    width: 100%;
+    outline: none;
+    border: .5px solid rgb(184, 183, 183);
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+main .content .form input.disable{
+    pointer-events: none;
+}
+
+main .content .form input.wrongWord{
+    border: 1px solid #ff4e4e;
+}
+
+
+main .content .game-over{
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ff4e4e;
+    opacity:0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+main .content .game-over.active{
+    opacity: 1;
+    display: flex;
+
+}
+
+main .content .game-over button{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #ccc;
+    border-radius: 4px;
+    margin-left: 20px;
+    
+}
+
+main .content .game-over .reset i{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 5px;
+}
+main .content .content-footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .content .content-footer .time-left,.score{
+    font-size: 20px;
+    font-weight: 600;
+}
+main .content .content-footer .time-left span{
+    font-weight: 700;
+}
+main .content .content-footer .time-left .sec{
+    font-size: 18px;
+}
+main .content .content-footer .score span{
+    color: #4BB543;
+    font-weight: 700;
+}
+
+/* Instructuion Box */
+
+main .instructions{
+    /* border: 1px solid black; */
+    height: fit-content;
+    width: 600px;
+    background-color:#5C656D;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+main .instructions .heading{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    color: #ccc;
+}
+
+main .instructions .description{
+    text-align: center;
+    font-size: 15px;
+    color: #ccc;
+}

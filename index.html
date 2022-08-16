@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordTyper.io | A game which will gives you point on writing given word in given time</title>
+    <link type="image/png"  rel="icon" href="icons8-w-48.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/word.js" type="module" defer></script>
+    <script type="module" src="JS/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>WordTyper.io</h1>
+    </header>
+    <main>
+        <div class="content">
+            <div class="note">Type the given word within <b>5</b> sec</div>
+            <div class="word">
+                <span>Rare</span>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Start Typing...">
+                <span>Check spelling. Incorrect word</span>
+            </div>
+            <div class="game-over">
+                Game Over !!
+
+                <button class="reset">Reset<i class="ri-restart-fill"></i></button>
+
+            </div>
+            <div class="content-footer">
+                <div class="time-left">
+                    Time Left : <span class="time-value">5</span><span class="sec">s</span>
+                </div>
+                <div class="score">
+                    Score : <span>0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <div class="heading">Instructions!!!</div>
+            <div class="description">
+                Type each word in the given amount to time. To play again, click on Reset button.
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
